@@ -1,0 +1,233 @@
+@import url("/css/style.css");
+.welcome-container {
+  width: 100%;
+  display: block;
+  height: auto;
+  position: relative;
+  background: url("../images/Background_Blue.svg") no-repeat;
+}
+
+.welcome-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1492px;
+  margin: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: space-evenly;
+  padding-bottom: 180px;
+}
+
+@media only screen and (max-width: 768px) {
+  .welcome-content {
+    display: block;
+  }
+}
+
+.welcome-text, .title-text {
+  font-family: 'Noto Sans', sans-serif !important;
+  z-index: 3;
+}
+
+.welcome-text p, .title-text p {
+  margin: 0;
+}
+
+h1.title-text {
+  font-weight: 100;
+  color: #4074B2;
+  font-size: 3.625rem;
+  line-height: 60px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  h1.title-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #0F3860;
+  }
+}
+
+p.welcome-text {
+  font-size: 1em;
+}
+
+.intro-nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 700px;
+  width: 100%;
+}
+
+.intro-nav div {
+  text-align: center;
+}
+
+.intro-nav div p {
+  margin-top: 15px;
+}
+
+.intro-nav div .video-icon {
+  background: url("../images/Video_big.svg") no-repeat;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.intro-nav div .video-icon:hover {
+  background: url("../images/Video_bigHover.svg") no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+}
+
+.intro-nav div .info-icon {
+  background: url("../images/Info_big.svg") no-repeat;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.intro-nav div .info-icon:hover {
+  background: url("../images/Info_bigHover.svg") no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-nav {
+    display: block;
+  }
+}
+
+.video-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.video-container video {
+  width: 100%;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 1280px;
+  height: 780px;
+}
+
+ul.nav.nav-tabs.welcome-intro-tabs {
+  padding: 0;
+  margin: 0;
+}
+
+.welcome-intro-tabs li {
+  list-style: none;
+  display: inline-block;
+  width: 498px;
+  height: 68px;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .welcome-intro-tabs li {
+    display: inline;
+  }
+}
+
+.welcome-intro-tabs li:hover {
+  background: #4074B2;
+}
+
+.welcome-intro-tabs li:hover svg path {
+  fill: #fff;
+}
+
+.welcome-intro-tabs li:hover a {
+  color: #fff;
+}
+
+.welcome-intro-tabs li.active {
+  background: #4074B2;
+}
+
+.welcome-intro-tabs li.active svg path {
+  fill: #fff;
+}
+
+.welcome-intro-tabs li.active a {
+  color: #fff;
+}
+
+.welcome-intro-tabs li a {
+  text-decoration: none;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #777777;
+  width: 498px;
+  height: 60px;
+  position: absolute;
+  left: 20%;
+  right: 88.05%;
+  top: 16.43%;
+  bottom: 80.89%;
+}
+
+.welcome-intro-tabs li svg {
+  position: absolute;
+  left: -60px;
+}
+
+#menu2 {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .welcome-intro-tabs li a span, .welcome-intro-tabs li.active a span {
+    display: none;
+  }
+  .nav-tabs-mobile {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .nav-tabs-mobile li {
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    background: #FFFFFF;
+    border: 1px solid black;
+  }
+  .nav-tabs-mobile li img {
+    position: relative;
+    top: calc(50% - 10px);
+  }
+}
+/*# sourceMappingURL=welcome.css.map */
