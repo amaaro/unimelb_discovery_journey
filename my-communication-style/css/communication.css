@@ -1,0 +1,256 @@
+@import url("/css/style.css");
+.communication-container {
+  width: 100%;
+  display: block;
+  height: auto;
+  position: relative;
+  background: url("../images/Background_Green.svg") no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.communication-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1492px;
+  margin: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: space-evenly;
+  padding-bottom: 180px;
+}
+
+@media only screen and (max-width: 768px) {
+  .communication-content {
+    display: block;
+  }
+}
+
+.communication-text, .title-text {
+  font-family: 'Noto Sans', sans-serif !important;
+  z-index: 3;
+}
+
+h1.title-text {
+  font-weight: 100;
+  color: #A1D172;
+  font-size: 3.625rem;
+  line-height: 60px;
+}
+
+p.communication-text {
+  font-size: 1em;
+}
+
+.intro-nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  max-width: 700px;
+  width: 100%;
+}
+
+.intro-nav div {
+  display: block;
+}
+
+.intro-nav div p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.intro-nav div .video-icon {
+  background: url("../images/Green_VideoIcon_Normal.svg") no-repeat;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.intro-nav div .video-icon:hover {
+  background: url("../images/Green_VideoIcon_Hover.svg") no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+}
+
+.intro-nav div .tool-icon {
+  background: url("../images/Green_ToolIcon_Normal.svg") no-repeat;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.intro-nav div .tool-icon:hover {
+  background: url("../images/Green_ToolIcon_Hover.svg") no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+}
+
+.intro-nav div .info-icon {
+  background: url("../images/Green_InfoIcon_Normal.svg") no-repeat;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.intro-nav div .info-icon:hover {
+  background: url("../images/Green_InfoIcon_Hover.svg") no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-nav {
+    display: block;
+  }
+}
+
+.video-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.video-container video {
+  width: 100%;
+}
+
+ul.nav.nav-tabs.communication-intro-tabs {
+  padding: 0;
+  margin: 0;
+}
+
+.communication-intro-tabs li {
+  list-style: none;
+  display: inline-block;
+  width: 498px;
+  height: 68px;
+  position: relative;
+}
+
+.communication-intro-tabs li:hover {
+  background: #A1D172;
+}
+
+.communication-intro-tabs li:hover svg path {
+  fill: #fff;
+}
+
+.communication-intro-tabs li:hover a {
+  color: #fff;
+}
+
+.communication-intro-tabs li.active {
+  background: #A1D172;
+}
+
+.communication-intro-tabs li.active svg path {
+  fill: #fff;
+}
+
+.communication-intro-tabs li.active a {
+  color: #fff;
+}
+
+.communication-intro-tabs li a {
+  text-decoration: none;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #777777;
+  width: 498px;
+  height: 60px;
+  position: absolute;
+  left: 20%;
+  right: 88.05%;
+  top: 16.43%;
+  bottom: 80.89%;
+}
+
+.communication-intro-tabs li svg {
+  position: absolute;
+  left: -60px;
+}
+
+#menu2 {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+.how-to-use {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.how-to-use .how-to-use-graph {
+  position: relative;
+  width: 440px;
+  height: 523px;
+}
+
+.how-to-use .how-to-use-graph img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.how-to-use .how-to-use-graph .people {
+  position: absolute;
+  background: url("../images/icn_People-Focused_normal.svg") no-repeat;
+  width: 70px;
+  height: 70px;
+  top: -46px;
+  left: 114px;
+}
+
+.how-to-use .how-to-use-graph .easy {
+  position: absolute;
+  background: url("../images/icn_Easy-Going_normal.svg") no-repeat;
+  width: 70px;
+  height: 70px;
+}
+
+.how-to-use .how-to-use-graph .task {
+  position: absolute;
+  background: url("../images/icn_Task-Focused_normal.svg") no-repeat;
+  width: 70px;
+  height: 70px;
+}
+
+.how-to-use .how-to-use-graph .tell-fash {
+  position: absolute;
+  background: url("../images/icn_Dominant_normal.svg") no-repeat;
+  width: 70px;
+  height: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+  .communication-intro-tabs li a span, .communication-intro-tabs li.active a span {
+    display: none;
+  }
+}
+/*# sourceMappingURL=communication.css.map */

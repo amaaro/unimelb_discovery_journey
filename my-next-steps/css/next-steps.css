@@ -1,0 +1,226 @@
+@import url("/css/style.css");
+.next-steps-container {
+  width: 100%;
+  display: block;
+  height: auto;
+  position: relative;
+  background: url("../images/purple_RightElement.png") no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.next-steps-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1492px;
+  margin: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: space-evenly;
+  padding-bottom: 180px;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .next-steps-content {
+    display: block;
+  }
+}
+
+.next-steps-text, .title-text {
+  font-family: 'Noto Sans', sans-serif !important;
+  z-index: 3;
+}
+
+h1.title-text {
+  font-weight: 100;
+  color: #7283BF;
+  font-size: 3.625rem;
+  line-height: 60px;
+}
+
+p.next-steps-text {
+  font-size: 1em;
+}
+
+.intro-nav {
+  display: block;
+  max-width: 700px;
+  width: 100%;
+}
+
+.intro-nav div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.intro-nav div p {
+  margin-top: 60px;
+}
+
+.intro-nav div .video-icon {
+  background: url("../images/purple_Video_normal.svg") no-repeat;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.intro-nav div .video-icon:hover {
+  background: url("../images/purple_Video_hover.svg") no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+}
+
+.intro-nav div .video-icon2 {
+  background: url("../images/Video_big.svg") no-repeat;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.intro-nav div .video-icon2:hover {
+  background: url("../images/Video_bigHover.svg") no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+}
+
+.intro-nav div .info-icon {
+  background: url("../images/purple_Example_normal.svg") no-repeat;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.intro-nav div .info-icon:hover {
+  background: url("../images/purple_Example_hover.svg") no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-nav {
+    display: block;
+  }
+}
+
+.slide-arrow {
+  position: absolute;
+  bottom: 22%;
+  left: 7%;
+}
+
+.slide-arrow a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.slide-arrow a.prev {
+  margin-right: 20px;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.video-container video {
+  width: 100%;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 1280px;
+  height: 780px;
+}
+
+ul.nav.nav-tabs.next-steps-intro-tabs {
+  padding: 0;
+  margin: 0;
+}
+
+.next-steps-intro-tabs li {
+  list-style: none;
+  display: inline-block;
+  width: 498px;
+  height: 68px;
+  position: relative;
+}
+
+.next-steps-intro-tabs li:hover {
+  background: #7283BF;
+}
+
+.next-steps-intro-tabs li:hover svg path {
+  fill: #fff;
+}
+
+.next-steps-intro-tabs li:hover a {
+  color: #fff;
+}
+
+.next-steps-intro-tabs li.active {
+  background: #7283BF;
+}
+
+.next-steps-intro-tabs li.active svg path {
+  fill: #fff;
+}
+
+.next-steps-intro-tabs li.active a {
+  color: #fff;
+}
+
+.next-steps-intro-tabs li a {
+  text-decoration: none;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #777777;
+  width: 498px;
+  height: 60px;
+  position: absolute;
+  left: 20%;
+  right: 88.05%;
+  top: 16.43%;
+  bottom: 80.89%;
+}
+
+.next-steps-intro-tabs li svg {
+  position: absolute;
+  left: -60px;
+}
+
+#menu2 {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .next-steps-intro-tabs li a span, .next-steps-intro-tabs li.active a span {
+    display: none;
+  }
+}
+/*# sourceMappingURL=next-steps.css.map */

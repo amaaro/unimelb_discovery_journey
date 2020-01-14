@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".video-icon").click(function() {
+    $(".info-icon").click(function() {
       $("#menu1").addClass("in active");
       $("#menu2").removeClass("in active");
       $("#menu3").removeClass("in active");
@@ -7,7 +7,7 @@ $(document).ready(function(){
       $(".video-tab2").removeClass("active");
       $(".info-tab").removeClass("active");
     });
-    $(".video-icon2").click(function() {
+    $(".video-icon").click(function() {
       $("#menu2").addClass("in active");
       $("#menu1").removeClass("in active");
       $("#menu3").removeClass("in active");
@@ -15,7 +15,7 @@ $(document).ready(function(){
       $(".video-tab2").addClass("active");
       $(".info-tab").removeClass("active");
     });
-    $(".info-icon").click(function() {
+    $(".tool-icon").click(function() {
       $("#menu3").addClass("in active");
       $("#menu1").removeClass("in active");
       $("#menu2").removeClass("in active");
@@ -34,5 +34,18 @@ $(document).ready(function(){
     $(".info-tab").click(function(){
         $('#vid1').trigger('pause');
         $('#vid2').trigger('pause');
+    });
+
+    // info content
+
+    $("#slider1next").click(function() {
+      var $next = $(".text:visible").hide().next('p');
+  
+      $next.length ? $next.show() : $(".text:first").show();
+      });
+      
+      $("#slider2next").click(function() {
+          var $next = $(".text:visible").hide().prev('p');
+          $next.length ? $next.show() : $(".text:last").show();
     });
   });

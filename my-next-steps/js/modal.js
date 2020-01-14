@@ -4,21 +4,14 @@ $(document).ready(function(){
       $("#menu2").removeClass("in active");
       $("#menu3").removeClass("in active");
       $(".video-tab").addClass("active");
-      $(".video-tab2").removeClass("active");
+
       $(".info-tab").removeClass("active");
     });
-    $(".video-icon2").click(function() {
+
+    $(".info-icon").click(function() {
       $("#menu2").addClass("in active");
       $("#menu1").removeClass("in active");
-      $("#menu3").removeClass("in active");
       $(".video-tab").removeClass("active");
-      $(".video-tab2").addClass("active");
-      $(".info-tab").removeClass("active");
-    });
-    $(".info-icon").click(function() {
-      $("#menu3").addClass("in active");
-      $("#menu1").removeClass("in active");
-      $("#menu2").removeClass("in active");
       $(".info-tab").addClass("active");
     });
   
